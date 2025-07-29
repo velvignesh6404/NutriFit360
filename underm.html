@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .maintenance-container h1 {
+            font-size: 3rem;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        .maintenance-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .maintenance-container .icon {
+            font-size: 60px;
+            color: #ff6347;
+            animation: bounce 1.5s infinite;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 1rem;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e5533f;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="icon">🚧</div>
+        <h1>We'll Be Back Soon!</h1>
+        <p>We're working hard to improve our website and will be back shortly. Thank you for your patience!</p>
+        <a href="features.php" class="btn">Go back</a>
+    </div>
+</body>
+</html>
